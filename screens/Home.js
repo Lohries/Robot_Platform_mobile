@@ -1,13 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import Detection from './Detection';
-import AboutUs from './AboutUs';
-import Chat from './Chat';
+
+
+
+
+
 
 
 export default function Home() {
   return (
+   
     <View style={styles.container}>
       <Text>Inmoov</Text>
       <StatusBar style="auto" />
@@ -16,6 +18,7 @@ export default function Home() {
         <Image style={styles.footerImg2} source={require('../assets/img2.png')} />
       </View>
     </View>
+    
   );
 }
 const styles = StyleSheet.create({
