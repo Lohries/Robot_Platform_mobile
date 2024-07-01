@@ -1,6 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
 
 
 export default function Home() {
@@ -19,6 +18,7 @@ export default function Home() {
         </TouchableOpacity>
       </View>
       
+
       <View style={styles.footer}>
         <Image style={styles.footerImg1} source={require('../assets/img1.png')} />
         <Image style={styles.footerImg2} source={require('../assets/img2.png')} />
@@ -28,6 +28,7 @@ export default function Home() {
 
   );
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -53,6 +54,11 @@ const styles = StyleSheet.create({
   footerImg2: {
     width: 200,
     height: 100,
+  },
+  linearGradient: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   buttons:{
     flexDirection: 'column',
